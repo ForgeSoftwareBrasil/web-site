@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Forge Software | Software House e Consultoria em Tecnologia",
+  title: "Forge Software | Software House e Consultoria em Tecnologia teste",
   description:
     "Desenvolvimento de software sob medida, consultoria em TI e transformação digital para empresas que buscam impacto real. Forjamos o futuro do seu negócio com tecnologia.",
   keywords: [
