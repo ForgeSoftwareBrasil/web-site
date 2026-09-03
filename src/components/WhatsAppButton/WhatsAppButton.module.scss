@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+
+.button {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 50;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: $color-whatsapp;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: $color-white;
+}

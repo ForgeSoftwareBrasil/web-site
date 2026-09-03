@@ -1,0 +1,68 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.differentials {
+  background: $color-bg-light;
+  padding: $section-padding-y-mobile 1.5rem;
+
+  @include tablet {
+    padding: $section-padding-y 2.5rem;
+  }
+}
+
+.inner {
+  @include container;
+  padding-inline: 0;
+}
+
+.title {
+  color: $color-text-dark;
+  text-align: center;
+  font-size: clamp(1.9rem, 3vw + 1rem, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.25rem;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.emoji {
+  font-size: 2.75rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+  color: $color-accent;
+}
+
+.itemTitle {
+  color: $color-text-dark;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.itemText {
+  color: $color-text-dark;
+  opacity: 0.85;
+  line-height: 1.65;
+  font-size: 0.96rem;
+}

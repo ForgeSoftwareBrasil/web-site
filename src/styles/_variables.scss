@@ -1,0 +1,23 @@
+// Forge Software - design tokens
+
+$color-purple-start: #b200d1;
+$color-purple-end: #32005e;
+$color-bg-light: #e9e4ea;
+$color-white: #ffffff;
+$color-text-dark: #2b0675;
+$color-accent: #b600ae;
+$color-accent-dark: #8a0086;
+$color-whatsapp: #25d366;
+
+$gradient-primary: linear-gradient(135deg, $color-purple-start 0%, $color-purple-end 100%);
+
+$font-family-base: var(--font-poppins), "Poppins", "Segoe UI", sans-serif;
+
+$container-max-width: 1200px;
+$section-padding-y: 5rem;
+$section-padding-y-mobile: 3.5rem;
+
+$radius-md: 12px;
+$radius-lg: 20px;
+
+$transition-base: 0.3s ease;

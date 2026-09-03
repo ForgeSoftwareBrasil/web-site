@@ -1,0 +1,10 @@
+@use "../../styles/mixins" as *;
+
+.reveal {
+  @include reveal-on-scroll;
+}
+
+.isVisible {
+  opacity: 1;
+  transform: translateY(0);
+}

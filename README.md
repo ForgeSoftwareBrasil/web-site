@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Forge Software — Landing Page
 
-## Getting Started
+Landing page da Forge Software, uma software house e consultoria em tecnologia. Construída com Next.js (App Router), TypeScript estrito e SASS/CSS Modules.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript** (strict mode)
+- **SASS** (variáveis, mixins e CSS Modules por componente)
+
+## Rodando localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — servidor de desenvolvimento
+- `npm run build` — build de produção
+- `npm run start` — serve o build de produção
+- `npm run lint` — ESLint
 
-## Learn More
+## Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/            # layout.tsx, page.tsx, globals.scss
+  components/     # um componente por seção (Hero, About, Services, ...)
+  data/           # conteúdo tipado (serviços, diferenciais, depoimentos)
+  hooks/          # useScrollReveal (Intersection Observer)
+  lib/            # constantes (WhatsApp, contato, redes sociais)
+  styles/         # variáveis e mixins SASS compartilhados
+  types/          # interfaces TypeScript
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Placeholders a substituir
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Número de WhatsApp e mensagem padrão em `src/lib/constants.ts`
+- E-mail de contato em `src/lib/constants.ts`
+- Links de Instagram/LinkedIn em `src/lib/constants.ts`
+- Fotos de depoimentos em `src/data/testimonials.ts` (marcadas com `SUBSTITUIR POR IMAGEM REAL`)
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Otimizado para deploy direto na [Vercel](https://vercel.com/new).
