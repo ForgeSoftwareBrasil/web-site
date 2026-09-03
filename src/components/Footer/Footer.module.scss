@@ -1,0 +1,96 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.footer {
+  background: $color-purple-end;
+  padding: 3rem 1.5rem 2.5rem;
+
+  @include tablet {
+    padding: 3.5rem 2.5rem 2.5rem;
+  }
+}
+
+.inner {
+  @include container;
+  padding-inline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.flameIcon {
+  width: 26px;
+  height: 26px;
+  color: $color-white;
+}
+
+.brandName {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+.contactLink {
+  color: $color-white;
+  opacity: 0.85;
+  font-size: 0.95rem;
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  transition: background-color $transition-base, transform $transition-base;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+.rights {
+  color: $color-white;
+  opacity: 0.6;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}

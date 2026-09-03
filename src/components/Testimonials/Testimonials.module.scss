@@ -1,0 +1,76 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.testimonials {
+  background: $gradient-primary;
+  padding: $section-padding-y-mobile 1.5rem;
+
+  @include tablet {
+    padding: $section-padding-y 2.5rem;
+  }
+}
+
+.inner {
+  @include container;
+  padding-inline: 0;
+}
+
+.title {
+  color: $color-white;
+  text-align: center;
+  font-size: clamp(1.9rem, 3vw + 1rem, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: $radius-lg;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content {
+  color: $color-white;
+  line-height: 1.7;
+  font-size: 0.98rem;
+  opacity: 0.95;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.name {
+  color: $color-white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.role {
+  color: $color-white;
+  opacity: 0.75;
+  font-size: 0.85rem;
+}
