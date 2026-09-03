@@ -59,9 +59,7 @@
 }
 
 .flameIcon {
-  width: 40px;
-  height: 40px;
-  color: $color-white;
+  height: 100%;
 }
 
 .title {
@@ -99,8 +97,9 @@
   animation-delay: 0.6s;
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+    color: $color-white;
+    background: $color-accent;
   }
 }
 
