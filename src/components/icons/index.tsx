@@ -2,23 +2,6 @@ import type { SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement>;
 
-export function FlameIcon(props: IconProps): React.JSX.Element {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M12.5 2c.3 2.5-.6 3.9-1.9 5.3C9.2 8.7 8 10.2 8 12.5a4.5 4.5 0 0 0 9 0c0-1.2-.4-2-1-2.8.9.3 2 1.4 2 3.3a6.5 6.5 0 0 1-13 0c0-4.2 2.9-6 4.6-8.1C10.6 3.6 11.3 2.8 12.5 2Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
 export function CodeIcon(props: IconProps): React.JSX.Element {
   return (
     <svg

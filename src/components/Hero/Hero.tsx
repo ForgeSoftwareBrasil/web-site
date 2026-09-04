@@ -1,5 +1,6 @@
-import { FlameIcon } from "@/components/icons";
+import Image from "next/image";
 import { WHATSAPP_LINK } from "@/lib/constants";
+import FlameIcon from "../../../public/logoApenasIconeSemFundo.png";
 import styles from "./Hero.module.scss";
 
 export function Hero(): React.JSX.Element {
@@ -7,7 +8,7 @@ export function Hero(): React.JSX.Element {
     <section className={styles.hero} id="hero">
       <div className={styles.inner}>
         <div className={`${styles.flameBadge} ${styles.animateIn}`}>
-          <FlameIcon className={styles.flameIcon} />
+          <Image src={FlameIcon} className={styles.flameIcon} alt="Forge Logo"/>
         </div>
         <h1 className={`${styles.title} ${styles.animateIn}`}>
           Forjando o futuro do seu negócio com tecnologia

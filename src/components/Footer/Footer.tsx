@@ -1,5 +1,7 @@
-import { FlameIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, INSTAGRAM_URL, LINKEDIN_URL } from "@/lib/constants";
+import { InstagramIcon, LinkedInIcon } from "@/components/icons";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, INSTAGRAM_URL, LINKEDIN_URL, WHATSAPP_NUMBER } from "@/lib/constants";
+import Image from "next/image";
+import FlameIcon from "../../../public/logoApenasIconeSemFundo.png";
 import styles from "./Footer.module.scss";
 
 export function Footer(): React.JSX.Element {
@@ -9,7 +11,7 @@ export function Footer(): React.JSX.Element {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <FlameIcon className={styles.flameIcon} />
+          <Image src={FlameIcon} className={styles.flameIcon} alt="Forge Logo"/>
           <span className={styles.brandName}>FORGE SOFTWARE</span>
         </div>
 
@@ -17,24 +19,28 @@ export function Footer(): React.JSX.Element {
           <a href={`mailto:${CONTACT_EMAIL}`} className={styles.contactLink}>
             📩 {CONTACT_EMAIL}
           </a>
-          <span className={styles.contactLink}>📱 {CONTACT_PHONE_DISPLAY}</span>
+          <a href={`tel:+${WHATSAPP_NUMBER}`} className={styles.contactLink}>
+            📱 {CONTACT_PHONE_DISPLAY}
+            </a>
         </div>
 
         <div className={styles.social}>
           <a
             href={INSTAGRAM_URL}
             aria-label="Instagram da Forge Software"
+            target="_blank"
             className={styles.socialLink}
           >
             <InstagramIcon />
           </a>
-          <a
+          {/* <a
             href={LINKEDIN_URL}
+            target="_blank"
             aria-label="LinkedIn da Forge Software"
             className={styles.socialLink}
           >
             <LinkedInIcon />
-          </a>
+          </a> */}
         </div>
 
         <p className={styles.rights}>© {year} Forge Software. Todos os direitos reservados.</p>
