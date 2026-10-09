@@ -1,6 +1,5 @@
 import type { Testimonial } from "@/types";
 
-// SUBSTITUIR POR IMAGEM REAL (fotos de perfil dos clientes)
 export const testimonials: Testimonial[] = [
   {
     id: "cliente-1",

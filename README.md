@@ -39,10 +39,7 @@ src/
 
 ## Placeholders a substituir
 
-- Número de WhatsApp e mensagem padrão em `src/lib/constants.ts`
-- E-mail de contato em `src/lib/constants.ts`
-- Links de Instagram/LinkedIn em `src/lib/constants.ts`
-- Fotos de depoimentos em `src/data/testimonials.ts` (marcadas com `SUBSTITUIR POR IMAGEM REAL`)
+- Fotos de depoimentos em `src/data/testimonials.ts` (Assim que fecharmos com os primeiros clientes)
 
 ## Deploy
 

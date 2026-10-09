@@ -14,7 +14,7 @@ export default function Home(): React.JSX.Element {
         <About />
         <Services />
         <Differentials />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <ContactCta />
       </main>
       <Footer />
